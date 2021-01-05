@@ -1,0 +1,2 @@
+#[smtp.gmail.com]:587    USERNAME@gmail.com:PASSWORD
+[smtp.gmail.com]:587    akyhcs@gmail.com:password

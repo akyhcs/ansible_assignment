@@ -1,0 +1,12 @@
+---
+- name: Deploy html page
+  hosts: debian
+  become: true
+  vars:
+   ansistrano_deploy_from: "{{ playbook_dir }}/app/"
+   ansistrano_deploy_to: "/var/www/html"
+   ansistrano_keep_releases: 5
+   ansistrano_deploy_via: copy
+   ansistrano_before_setup_tasks_file: "{{ playbook_dir }}/apache_server.yaml"
+  roles:
+    - { role: ansistrano.deploy }

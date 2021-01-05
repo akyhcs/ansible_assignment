@@ -1,0 +1,8 @@
+---
+- name: Rollback example app to my-server.com
+  hosts: debian
+  become: true
+  vars:
+   ansistrano_deploy_to: "/var/www/html"
+  roles:
+   - { role: ansistrano.rollback }

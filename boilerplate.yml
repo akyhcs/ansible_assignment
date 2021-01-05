@@ -1,0 +1,7 @@
+---
+#security guidlines for servers
+- name: security guidlines for servers
+  hosts: debian
+  become: yes
+  roles:
+  - boilerplate

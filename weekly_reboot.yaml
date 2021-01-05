@@ -1,0 +1,7 @@
+---
+ #A PlayBook to demonstrate Weekly System Reboot
+- hosts: demo
+  connection: ssh
+  roles: 
+  - reboot
+

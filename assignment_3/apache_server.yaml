@@ -1,0 +1,11 @@
+- name: install apache2
+  apt: name=apache2 update_cache=yes state=latest
+
+  #- name: replace default with current path
+  #replace:
+  #path: /etc/apache2/sites-available/000-default.conf
+  #regexp: '/var/www/html'
+  #replace: "/var/www/html/current"
+                     
+  #- name: restart apache2
+  #service: name=apache2 state=restarted

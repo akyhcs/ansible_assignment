@@ -1,0 +1,20 @@
+---
+# tasks file for reboot
+          - name:  upgrades all packages in linux-based machine
+            yum: name=* state=latest
+          - name: Reboot server
+            command: "{{ item }}"
+            with_items:
+                    - sleep 10
+                    - /sbin/reboot
+            async: 1
+            poll: 0
+          - name: wait for 300 seconds for port 22 to become open and contain OpenSSH
+            become_user: root
+            wait_for:
+                   port: 22
+                   host: '{{ (ansible_ssh_host|default(ansible_host))|default(inventory_hostname) }}'
+                   search_regex: OpenSSH
+                   delay: 10
+                   #timeout: 300
+
