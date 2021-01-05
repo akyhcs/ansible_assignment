@@ -3,7 +3,7 @@ name: "collection_name"
 version: "1.0.12"
 readme: "README.md"
 authors:
-    - ANAND KUMAR
+    - chakradhar
     - "Author2 (https://author2.example.com)"
     - "Author3 <author3@example.com>"
 dependencies: []
@@ -12,4 +12,4 @@ license:
 tags:
     - demo
     - collection
-repository: "https://github.com/akyhcs/ansible_assignment"
+repository: "https://www.github.com/chakri1998/ansible201"
