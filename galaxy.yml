@@ -4,6 +4,8 @@ version: "1.0.12"
 readme: "README.md"
 authors:
     - ANAND KUMAR
+    - "Author2 (https://author2.example.com)"
+    - "Author3 <author3@example.com>"
 dependencies: []
 license:
     - "MIT"
